@@ -28,7 +28,7 @@ PageObjectModel
 ├── BaseTest.py                 # Contains Pytest-based UI test functions 
 ├── pg_bot.py                   # Script to auto-download .zip books by specified author 
 ├── README.md                   # This file 
-└── requirements.txt            # Optional dependency list 
+└── requirements.txt            # dependency list 
 ```
 
 
