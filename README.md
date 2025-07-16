@@ -5,7 +5,7 @@ structured using the Page Object Model (POM) design pattern, and tested with Pyt
 
 ChromeDriver Setup Instructions : This project assumes chromedriver is available in your system PATH.
 
-The project targets the publicly accessible website [Project Gutenberg](https://www.gutenberg.org/), 
+The project targets the publicly accessible website [Project Gutenberg](https://www.gutenberg.org), 
 a digital library of free eBooks.
 
 ---------------------------------------------------------------------
@@ -19,16 +19,35 @@ a digital library of free eBooks.
 - ✅ Scalable object repository and modular design
 
 ------------------------------------------------------------------------
+## 🔍 Base Page Test – Overview
 
+This test suite performs:
+- Search bar functionality validation
+- Visibility checks for key UI elements
+- Broken link detection across live content
+
+✅ All 3 tests passed successfully!
+
+Terminal Output Snapshot:
+    BaseTestScreenschot1.png
+    BaseTestScreenschot2.png
+    BaseTestScreenschot3.png
+    BaseTestScreenschot4.png
+------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
 PageObjectModel 
 │
-├── BasePage.py                 # Page Object model for homepage locators and actions 
-├── BaseTest.py                 # Contains Pytest-based UI test functions 
-├── pg_bot.py                   # Script to auto-download .zip books by specified author 
-├── README.md                   # This file 
-└── requirements.txt            # dependency list 
+├── BasePage.py                     # Page Object model for homepage locators and actions 
+├── BaseTest.py                     # Contains Pytest-based UI test functions 
+├── pg_bot.py                       # Script to auto-download .zip books by specified author 
+├── README.md                       # This file 
+└── requirements.txt                # Optional dependency list
+
+├── BaseTestScreenschot1.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
+├── BaseTestScreenschot2.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py      
+├── BaseTestScreenschot3.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
+└── BaseTestScreenschot4.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
 ```
 
 
