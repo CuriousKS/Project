@@ -21,7 +21,7 @@ a digital library of free eBooks.
 --------------------------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Base Page Test – Overview
 
-    🔁 Regression Testing
+    ##🔁 Regression Testing
     This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.
 
     This test suite performs:
@@ -29,7 +29,7 @@ a digital library of free eBooks.
         - Search bar validation to confirm consistent input response
         - Broken link detection
 
-    ✅ All 3 tests passed successfully!
+    ##✅ All 3 tests passed successfully!
     Terminal Output Snapshot:
         BaseTestScreenschot1.png
         BaseTestScreenschot2.png
