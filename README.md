@@ -21,15 +21,15 @@ a digital library of free eBooks.
 --------------------------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Base Page Test – Overview
 
-🔁 Regression Testing
+🔁 Regression Testing<br>
     This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.<br>
     This test suite performs:<br>
         - Visibility checks for critical UI elements across the homepage<br>
         - Search bar validation to confirm consistent input response<br>
         - Broken link detection<br>
 <br>
-✅ All 3 tests passed successfully!
-    Terminal Output Snapshot:
+✅ All 3 tests passed successfully!<br>
+    Terminal Output Snapshot:<br>
         BaseTestScreenschot1.png<br>
         BaseTestScreenschot2.png<br>
         BaseTestScreenschot3.png<br>
