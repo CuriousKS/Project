@@ -23,7 +23,6 @@ a digital library of free eBooks.
 
 🔁 Regression Testing
     This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.
-
     This test suite performs:
         - Visibility checks for critical UI elements across the homepage
         - Search bar validation to confirm consistent input response
@@ -31,10 +30,10 @@ a digital library of free eBooks.
 
 ✅ All 3 tests passed successfully!
     Terminal Output Snapshot:
-        BaseTestScreenschot1.png
-        BaseTestScreenschot2.png
-        BaseTestScreenschot3.png
-        BaseTestScreenschot4.png      
+        BaseTestScreenschot1.png<br>
+        BaseTestScreenschot2.png<br>
+        BaseTestScreenschot3.png<br>
+        BaseTestScreenschot4.png<br>   
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
