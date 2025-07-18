@@ -28,6 +28,7 @@ a digital library of free eBooks.
         - Search bar validation to confirm consistent input response<br>
         - Broken link detection<br>
 <br>
+<br>
 ✅ All 3 tests passed successfully!<br>
     Terminal Output Snapshot:<br>
         BaseTestScreenschot1.png<br>
