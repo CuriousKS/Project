@@ -18,23 +18,25 @@ a digital library of free eBooks.
 - ✅ Download automation of all .zip book formats by author name
 - ✅ Scalable object repository and modular design
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Base Page Test – Overview
 
-This test suite performs:
-- Search bar functionality validation
-- Visibility checks for key UI elements
-- Broken link detection across live content
+    🔁 Regression Testing
+    This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.
 
-✅ All 3 tests passed successfully!
-```
-Terminal Output Snapshot:
-    BaseTestScreenschot1.png
-    BaseTestScreenschot2.png
-    BaseTestScreenschot3.png
-    BaseTestScreenschot4.png
-```    
-------------------------------------------------------------------------
+    This test suite performs:
+        - Visibility checks for critical UI elements across the homepage
+        - Search bar validation to confirm consistent input response
+        - Broken link detection
+
+    ✅ All 3 tests passed successfully!
+    Terminal Output Snapshot:
+        BaseTestScreenschot1.png
+        BaseTestScreenschot2.png
+        BaseTestScreenschot3.png
+        BaseTestScreenschot4.png
+       
+---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
 PageObjectModel 
