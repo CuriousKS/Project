@@ -40,16 +40,16 @@ a digital library of free eBooks.
 ```
 PageObjectModel 
 │
-├── BasePage.py                     # Page Object model for homepage locators and actions<br> 
-├── BaseTest.py                     # Contains Pytest-based UI test functions<br> 
-├── pg_bot.py                       # Script to auto-download .zip books by specified author<br> 
-├── README.md                       # This file<br> 
-└── requirements.txt                # Optional dependency list<br>
-<br>
-├── BaseTestScreenschot1.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py<br>
-├── BaseTestScreenschot2.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py<br>    
-├── BaseTestScreenschot3.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py<br>
-└── BaseTestScreenschot4.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py<br>
+├── BasePage.py                     # Page Object model for homepage locators and actions
+├── BaseTest.py                     # Contains Pytest-based UI test functions
+├── pg_bot.py                       # Script to auto-download .zip books by specified author 
+├── README.md                       # This file
+└── requirements.txt                # Optional dependency list
+
+├── BaseTestScreenschot1.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
+├── BaseTestScreenschot2.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py    
+├── BaseTestScreenschot3.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
+└── BaseTestScreenschot4.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
 ```
 
 
