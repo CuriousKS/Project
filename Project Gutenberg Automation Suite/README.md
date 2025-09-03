@@ -17,6 +17,7 @@ a digital library of free eBooks.
 - ✅ Detection of broken links (HTTP status ≥ 400)
 - ✅ Download automation of all .zip book formats by author name
 - ✅ Scalable object repository and modular design
+- ✅ Generate HTML Report
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Base Test – Overview
@@ -29,8 +30,9 @@ a digital library of free eBooks.
         - Broken link detection<br>
 <br>
 <br>
-✅ All 3 tests passed successfully!<br>
-    Terminal Output Snapshot:<br>
+
+
+✅   Terminal Output Snapshot:<br>
         BaseTestScreenschot1.png<br>
         BaseTestScreenschot2.png<br>
         BaseTestScreenschot3.png<br>
