@@ -1,6 +1,6 @@
 # 🔍 Multi-Platform Search Suggestion Scraper
 
-This Python project uses *Selenium WebDriver* to automate the collection of keyword suggestions from multiple search engines and platforms — including *Google, **DuckDuckGo, **Bing, **YouTube, and **eBay*. The results are compiled into a CSV file for easy analysis and comparison.
+This Python project uses *Selenium WebDriver* to automate the collection of keyword suggestions from multiple search engines and platforms — including *Google, DuckDuckGo, Bing, YouTube, and eBay*. The results are compiled into a CSV file for easy analysis and comparison.
 ChromeDriver Setup Instructions : This project assumes chromedriver is available in your system PATH.
 
 ---
@@ -27,8 +27,3 @@ ChromeDriver Setup Instructions : This project assumes chromedriver is available
 
 ---
 
-## 🚀 How to Run
-
-1. Install dependencies:
-   ```bash
-   pip install selenium pandas
