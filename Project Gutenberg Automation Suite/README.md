@@ -29,14 +29,14 @@ a digital library of free eBooks.
         - Search bar validation to confirm consistent input response<br>
         - Broken link detection<br>
 <br>
-<br>
+
 
 
 ✅   Terminal Output Snapshot:<br>
-        BaseTestScreenschot1.png<br>
-        BaseTestScreenschot2.png<br>
-        BaseTestScreenschot3.png<br>
-        BaseTestScreenschot4.png<br>   
+        RegressionTestResult1.png<br>
+        RegressionTestResult2.png<br>
+        RegressionTestResult3.png<br>
+        RegressionTestResult4.png<br>   
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
@@ -48,10 +48,10 @@ PageObjectModel
 ├── README.md                       # This file
 └── requirements.txt                # Optional dependency list
 
-├── BaseTestScreenschot1.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
-├── BaseTestScreenschot2.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py    
-├── BaseTestScreenschot3.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
-└── BaseTestScreenschot4.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py
+├── RegressionTestResult1.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
+├── RegressionTestResult2.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html   
+├── RegressionTestResult3.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
+└── RegressionTestResult4.png        #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
 ```
 
 
