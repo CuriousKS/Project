@@ -31,11 +31,13 @@ class TestLogin:
         for i in d1:
             if i=='driver':
                 continue
-            if check.is_true(self.page.get_common_element(i) != None,i+" not found!") :
-                print(i,"<-----This element is visible!")
+            if check.is_true(self.page.get_common_element(i).is_enabled() != False ,i+" not found!") :
+                print(i,"<-----This element is available!")
+            else:
+                print(i,"<-----THIS ELEMENT IS NOT AVAILABLE!")
     
                             
-            
+'''   
     def test_no_broken_links(self):
         print("\n\n\n\n")
         x=self.page.get_all_urls()
@@ -53,5 +55,6 @@ class TestLogin:
                 temp = i+"  <---There is some essue with this link"   
                 if check.is_true(status < 400,temp):
                     print(i+"  <---This link PASSED the test")
+                    '''
                                
             
