@@ -37,7 +37,7 @@ class TestLogin:
                 print(i,"<-----THIS ELEMENT IS NOT AVAILABLE!")
     
                             
-'''   
+   
     def test_no_broken_links(self):
         print("\n\n\n\n")
         x=self.page.get_all_urls()
@@ -55,6 +55,6 @@ class TestLogin:
                 temp = i+"  <---There is some essue with this link"   
                 if check.is_true(status < 400,temp):
                     print(i+"  <---This link PASSED the test")
-                    '''
+                    
                                
             
