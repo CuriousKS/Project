@@ -4,7 +4,7 @@ This project demonstrates REST API testing using Python and pytest. It interacts
 - Python
 - Requests (for making HTTP calls)
 - Pytest (for writing and running tests)
-✅ What I Tested
+✅ What Has Been  Tested
 - Searching authors by name
 - Fetching author details and works
 - Looking up books by ISBN
