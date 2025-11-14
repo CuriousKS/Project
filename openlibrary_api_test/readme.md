@@ -7,16 +7,16 @@ This project demonstrates REST API testing using Python and pytest. It interacts
 - Requests (for making HTTP calls)
 - Pytest (for writing and running tests)
 <br>
-✅ What Has Been  Tested
-- Searching authors by name
-- Fetching author details and works
-- Looking up books by ISBN
-- Validating API responses and status codes
+✅ What Has Been  Tested<br>
+- Searching authors by name<br>
+- Fetching author details and works<br>
+- Looking up books by ISBN<br>
+- Validating API responses and status codes<br>
 <br>
 🚀 How to Run
-- Install dependencies:
-pip install -r requirements.txt
-- Run tests:
+- Install dependencies:<br>
+pip install -r requirements.txt<br>
+- Run tests:<br>
 pytest test_openlibrary_api.py -rA -v
 
 
