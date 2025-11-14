@@ -2,7 +2,7 @@
 # 📘 OpenLibrary API Testing with Python
 This project demonstrates REST API testing using Python and pytest. It interacts with the OpenLibrary API to validate various endpoints and response behaviors.
 <br>
-🔧 Tech Stack
+🔧 Tech Stack<br>
 - Python
 - Requests (for making HTTP calls)
 - Pytest (for writing and running tests)
