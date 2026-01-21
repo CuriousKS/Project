@@ -6,14 +6,14 @@ It combines manual and automation testing to validate critical functionalities s
 navigation buttons, donate button, book image redirections, and broken link checks.
 
 
-2. Objectives
+__2. Objectives__
 - Ensure functional correctness of homepage features.  
 - Validate usability and redirection accuracy.  
 - Automate repetitive tasks (link validation, book download).  
 - Provide complete coverage through manual exploratory testing and automated regression.
 
 
-3. Scope of Testing
+__3. Scope of Testing__
 In Scope
 - Search bar functionality (valid, invalid, empty, special characters).  
 - Header and footer navigation buttons.  
@@ -22,51 +22,51 @@ In Scope
 - Broken link validation via automation.  
 
 
-Out of Scope
+__Out of Scope__
 - External site content (social media platforms, book text).  
 - Cosmetic UI details (fonts, hover effects).  
 - Backend database queries not exposed to UI.
 
 
-4. Test Approach
-Manual Testing
-- Positive, negative, and boundary test cases.  
-- Exploratory testing for usability.  
-- Cross-browser validation (Chrome, Firefox, Edge, Safari).  
+__4. Test Approach__
+    <u>Manual Testing</u>
+        - Positive, negative, and boundary test cases.  
+        - Exploratory testing for usability.  
+        - Cross-browser validation (Chrome, Firefox, Edge, Safari).  
 
 
-Automation Testing
-- Selenium script to:  
-  - Validate search bar functionality.  
-  - Verify existence of header/footer buttons.  
-  - Check for broken links.  
-  - Download a book using search.  
-- Automation results documented in automation_report.md.
+    <u>Automation Testing</u>
+        - Selenium script to:  
+        - Validate search bar functionality.  
+        - Verify existence of header/footer buttons.  
+        - Check for broken links.  
+        - Download a book using search.  
+        - Automation results documented in automation_report.md.
 
 
-5. Entry Criteria  
+__5. Entry Criteria__  
 - Test cases prepared and reviewed.  
 - Test environment setup complete.  
 - Automation script ready.  
 
-6. Exit Criteria
+__6. Exit Criteria__
 - All manual test cases executed.  
 - Automation script executed successfully.  
 - All critical defects resolved or deferred with approval.  
 - Test summary report prepared.  
 
 
-7. Deliverables
+__7. Deliverables__
 - Manual: SRS.md, TestPlan.md, TestCases.xlsx, TestSummaryReport.md, BugReportTemplate.md.  
 - Automation: gutenbergtest.py, requirements.txt, automationreport.md.  
 
-8. Environment
+__8. Environment__
 - Browsers: Chrome , Firefox, Edge  
 - OS: Windows 11  
 - Tools: Selenium, Python, Excel.  
 
 
-9. Schedule
+__9. Schedule__
 - Requirement Analysis: 1/2 day 
 - Test Planning: 1/2 day  
 - Test Case Design: 1/2 day  
@@ -76,7 +76,7 @@ Automation Testing
 - Test Closure: 1/2 day   
 
 
-10. Risks & Mitigation
+__10. Risks & Mitigation__
 - Risk: Large number of links → Mitigation: Automate link validation.  
 - Risk: Browser compatibility issues → Mitigation: Perform cross-browser testing.  
 - Risk: External site downtime → Mitigation: Validate only redirection, not external content.  
