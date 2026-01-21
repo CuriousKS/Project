@@ -29,6 +29,7 @@ __Out of Scope__
 
 
 __4. Test Approach__
+
 Manual Testing
 - Positive, negative, and boundary test cases.  
 - Exploratory testing for usability.  
