@@ -29,13 +29,13 @@ __Out of Scope__
 
 
 __4. Test Approach__
-    <u>Manual Testing</u>
+    _Manual Testing_
         - Positive, negative, and boundary test cases.  
         - Exploratory testing for usability.  
         - Cross-browser validation (Chrome, Firefox, Edge, Safari).  
 
 
-    <u>Automation Testing</u>
+    _Automation Testing_
         - Selenium script to:  
         - Validate search bar functionality.  
         - Verify existence of header/footer buttons.  
