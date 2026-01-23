@@ -42,7 +42,7 @@ a digital library of free eBooks.
         Screenschot5.png<br>
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
-```
+
 PageObjectModel 
 │
 ├── BasePage.py                     # Page Object model for homepage locators and actions
@@ -57,7 +57,7 @@ PageObjectModel
 ├── Screenschot4.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
 └── Screenschot5.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
 
-```
+
 
 
 
