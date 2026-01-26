@@ -1,0 +1,483 @@
+{
+  "info": {
+    "_postman_id": "7b08a5f9-da55-4b40-9f88-11994bcd52db",
+    "name": "RoughWork2 : OpenLibrary APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43127732"
+  },
+  "item": [
+    {
+      "name": "Folder1",
+      "item": [
+        {
+          "name": "get_olid_positive_test",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "pm.collectionVariables.set(\"BASE_URL\",\"https://openlibrary.org\");"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//pm.collectionVariables.unset(\"BASE_URL\") ;\r",
+                  "//var jsonData=JSON.parse(responseBody);\r",
+                  "\r",
+                  "const jsonData = pm.response.json();\r",
+                  "pm.collectionVariables.set(\"OLID\",jsonData[\"docs\"][0][\"key\"]) ;\r",
+                  "console.log(pm.collectionVariables.get(\"OLID\"));\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"STATUS CODE IS 200\",\r",
+                  "()=>\r",
+                  "{pm.response.to.have.status(200)}\r",
+                  ");\r",
+                  "\r",
+                  "// ###################################################################\r",
+                  "//Positive Test Cases\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.withBody;\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Author found\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.numFound).to.be.at.least(1);\r",
+                  "    pm.expect(jsonData.docs[0].name).to.eql(pm.variables.get(\"authorName\"));\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/search/authors.json?q={{authorName}}",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "search",
+                "authors.json"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "{{authorName}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get_olid_negative_test",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Positive Test Cases\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.withBody;\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "//Negative Test Cases\r",
+                  "pm.test(\"No author found for invalid query\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.numFound).to.eql(0);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Empty query returns no results\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.numFound).to.eql(0);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Special characters return no results\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.numFound).to.eql(0);\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/search/authors.json?q=nonexistent author 123",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "search",
+                "authors.json"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "nonexistent author 123"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "read_api_books",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "console.log(pm.collectionVariables.get(\"OLID\")); "
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "console.log(pm.collectionVariables.get(\"OLID\"));\r",
+                  "\r",
+                  "pm.test(\"STATUS CODE IS 200\",\r",
+                  "()=>\r",
+                  "{pm.response.to.have.status(200)}\r",
+                  ");\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.withBody;\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/books?bibkeys=ISBN:1-4292-0124-X&format=json&jscmd=viewapi",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "api",
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "bibkeys",
+                  "value": "ISBN:1-4292-0124-X"
+                },
+                {
+                  "key": "format",
+                  "value": "json"
+                },
+                {
+                  "key": "jscmd",
+                  "value": "viewapi"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "read_authors_positive_test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Author name is Correct\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql( pm.variables.get(\"authorName\") );\r",
+                  "}); "
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json",
+                "description": "#I added this",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/authors/{{authorID}}.json",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "authors",
+                "{{authorID}}.json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "read_authors_negative_test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 404\", function () {\r",
+                  "    pm.response.to.have.status(404);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json",
+                "description": "#I added this",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/authors/abc.json",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "authors",
+                "abc.json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "read_authors_works_positive_test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "let authorID = pm.variables.get(\"authorID\");\r",
+                  "\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.json;\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Links object is valid\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.links.self).to.eql(\"/authors/\"+ authorID +\"/works.json\");\r",
+                  "    pm.expect(jsonData.links.author).to.eql(\"/authors/\" + authorID );\r",
+                  "});\r",
+                  "\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json",
+                "description": "#This is added by me",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/authors/{{authorID}}/works.json",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "authors",
+                "{{authorID}}",
+                "works.json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "read_authors_works_negative_test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 404\", function () {\r",
+                  "    pm.response.to.have.status(404);\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Response is JSON\", function () {\r",
+                  "    pm.response.to.be.withBody;\r",
+                  "    pm.response.to.be.json;\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json",
+                "description": "#This is added by me",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/authors/INVALID/works.json",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "authors",
+                "INVALID",
+                "works.json"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": ""
+    },
+    {
+      "key": "OLID",
+      "value": ""
+    }
+  ]
+}
