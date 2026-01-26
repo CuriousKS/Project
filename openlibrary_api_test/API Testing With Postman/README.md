@@ -46,4 +46,3 @@ You can define these in **Postman Environments** or pass them via a **data file*
 
 ---
 
-## 📂 Repository Structure
