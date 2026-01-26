@@ -2,6 +2,12 @@ import requests
 
 BASE_URL = "https://openlibrary.org"
 
+def author_detail(author_name: str):
+    params = {"q": author_name}
+    response = requests.get(f"{BASE_URL}/search/authors.json", params=params)
+    return response 
+    
+
 def get_olid(author_name: str) -> str:
     params = {"q": author_name}
     response = requests.get(f"{BASE_URL}/search/authors.json", params=params)
