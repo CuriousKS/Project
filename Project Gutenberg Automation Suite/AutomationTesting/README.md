@@ -26,10 +26,13 @@ a digital library of free eBooks.
 PageObjectModel 
 │
 ├── BasePage.py                     # Page Object model for homepage locators and actions
-├── BaseTest.py                     # Contains Pytest-based UI test functions
+├── BaseTest.py                     # Test Script : contains pytest based UI test functions
 ├── pg_bot.py                       # Script to auto-download .zip books by specified author 
+├── report.html                     # HTML report of test script execution
 ├── README.md                       # This file
-└── requirements.txt                # Other dependency list
+└── requirements.txt                # Python dependency list
+
+
 
 ├── Screenschot1.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html
 ├── Screenschot2.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html   
