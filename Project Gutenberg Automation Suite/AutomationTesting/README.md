@@ -3,9 +3,8 @@
 This repository contains a Python based automation suite built with Selenium WebDriver, 
 structured using the Page Object Model (POM) design pattern, and tested with Pytest.
 
-ChromeDriver Setup Instructions : This project assumes chromedriver is available in your system PATH.
+ChromeDriver Setup Instructions : This project assumes chromedriver is available in your system PATH.<br>
 FirefoxDriver Setup Instructions : This project assumes geckodriver is available in your system PATH.
-
 
 The project targets the publicly accessible website [Project Gutenberg](https://www.gutenberg.org), 
 a digital library of free eBooks.
@@ -15,10 +14,10 @@ a digital library of free eBooks.
 ## 🚀 Features
 
 - ✅ Home page interaction via POM structure
-- ✅ Search functionality test and title verification
-- ✅ Detection of broken links (HTTP status ≥ 400)
-- ✅ Download automation of all .zip book formats by author name
-- ✅ Scalable object repository and modular design
+- ✅ Search bar functionality test
+- ✅ Validate book download using search bar  
+- ✅ Verify availability of headers and footers buttons
+- ✅ Detection of broken links (HTTP status code ≥ 400)
 - ✅ Generate HTML Report
 
 --------------------------------------------------------------------------------------------------------------------------------------------
