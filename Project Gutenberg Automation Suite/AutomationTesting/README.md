@@ -24,7 +24,7 @@ a digital library of free eBooks.
 ## 🔍 Base Test – Overview
 
 🔁 Regression Testing<br>
-    This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.<br><br><br>
+    This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.<br>
     This test suite performs:<br>
         - Visibility checks for critical UI elements across the homepage<br>
         - Book download through search bar<br>
