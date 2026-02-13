@@ -21,21 +21,12 @@ a digital library of free eBooks.
 - ✅ Generate HTML Report
 
 --------------------------------------------------------------------------------------------------------------------------------------------
-## 🔍 Base Test – Overview
-
-🔁 Regression Testing<br>
-    This project includes regression-style test cases designed to ensure that core functionality remains stable after updates or code changes.<br>
-    This test suite performs:<br>
-        - Visibility checks for critical UI elements across the homepage<br>
-        - Book download through search bar<br>
-        - Broken link detection<br>
-
-   Terminal Output Snapshot:<br>
-        Screenschot1.png<br>
-        Screenschot2.png<br>
-        Screenschot3.png<br>
-        Screenschot4.png<br>
-        Screenschot5.png<br>
+## Terminal Output Snapshot:<br>
+      Screenschot1.png<br>
+      Screenschot2.png<br>
+      Screenschot3.png<br>
+      Screenschot4.png<br>
+      Screenschot5.png<br>
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
