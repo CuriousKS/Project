@@ -30,10 +30,7 @@ a digital library of free eBooks.
         - Book download through search bar<br>
         - Broken link detection<br>
 
-
-
-
-✅   Terminal Output Snapshot:<br>
+   Terminal Output Snapshot:<br>
         Screenschot1.png<br>
         Screenschot2.png<br>
         Screenschot3.png<br>
