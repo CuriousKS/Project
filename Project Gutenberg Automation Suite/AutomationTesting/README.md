@@ -21,12 +21,6 @@ a digital library of free eBooks.
 - ✅ Generate HTML Report
 
 --------------------------------------------------------------------------------------------------------------------------------------------
-## Terminal Output Snapshot:<br>
-      Screenschot1.png<br>
-      Screenschot2.png<br>
-      Screenschot3.png<br>
-      Screenschot4.png<br>
-      Screenschot5.png<br>
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## 📂 Folder Structure
 ```
@@ -38,11 +32,11 @@ PageObjectModel
 ├── README.md                       # This file
 └── requirements.txt                # Other dependency list
 
-├── Screenschot1.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
-├── Screenschot2.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html   
-├── Screenschot3.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
-├── Screenschot4.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
-└── Screenschot5.png                 #Terminal output snapschots of:  pytest -rA -v BaseTest.py --html=report.html
+├── Screenschot1.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html
+├── Screenschot2.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html   
+├── Screenschot3.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html
+├── Screenschot4.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html
+└── Screenschot5.png                 #Terminal output screenschot of:  pytest -rA -v BaseTest.py --html=report.html
 ```
 
 
